@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "218563974541-1t82nmmn2j9bgbuomu1e27og1abujtc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hdtgroup.hdt.firebasetodo",
+            "certificate_hash": "a089d2c7aee2baae3e97899a424e38d9635d84c3"
+          }
+        },
+        {
           "client_id": "218563974541-867o7m3pl3dsrvoghqctbm98v9imm5ee.apps.googleusercontent.com",
           "client_type": 3
         }
