@@ -32,6 +32,8 @@ public class ReadActivity extends AppCompatActivity implements IReadContract.IVi
 
         FloatingActionButton fabCreate = findViewById(R.id.fab_add_task);
         fabCreate.setOnClickListener(this);
+        FloatingActionButton fabSend = findViewById(R.id.fab_send);
+        fabSend.setOnClickListener(this);
 
         mReadPresenter = new ReadPresenter(this);
         mReadPresenter.readTasks();
@@ -54,6 +56,10 @@ public class ReadActivity extends AppCompatActivity implements IReadContract.IVi
             case R.id.fab_add_task: {
                 Intent intent = new Intent(ReadActivity.this, CreateActivity.class);
                 startActivity(intent);
+                break;
+            }
+            case R.id.fab_send:{
+                mReadPresenter.sendNotyFireBase();
                 break;
             }
             default:

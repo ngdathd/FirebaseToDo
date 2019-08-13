@@ -9,6 +9,8 @@ public interface IReadContract {
         void readTasks();
 
         void deleteTask(String key);
+
+        void sendNotyFireBase();
     }
 
     interface IView {
